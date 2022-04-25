@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel   src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js --exec babel-node -e js -e .yaml",
+    "start": "npm run build && nodemon app.js --exec babel-node -e js -e .yaml",
+    "build": "npm run clean && npm run babel-build",
+    "babel-build": "babel -d ./build ./src -s",
+    "clean": 
+     "mkdir build",
     "debug": "node  app.js"
   },
   "author": "",
