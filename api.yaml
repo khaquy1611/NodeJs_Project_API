@@ -1,0 +1,25 @@
+swagger: "2.0"
+info:
+  title: "API SWAGGER DEMO"
+  description: "Mô tả về API...."
+  version: 1.0.1
+paths:
+  api/categories:
+    get:
+      summary: "Lấy Danh Sách Của Sản Phẩm"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+    responses:
+      "200":
+        description: "Lấy Sản phẩm thành công"
+        schema:
+          type: "object"
+          additionalProperties:
+              type: "integer"
+              format: "int32"
+      "404":
+        description: "Lấy Danh Sách Sản Phẩm Thất Bại"
+      security:
+      - api_key: []
