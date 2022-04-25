@@ -1,14 +1,12 @@
 {
     "presets": [
         [
-            "@babel/preset-env",
-            {
-                "targets": {
-                    "node": "current"
-                }
+        "env", 
+        {
+            "targets": {
+              "node": "current"
             }
-        ],
-        "env" ,
-        "stage-0"
+        }
+    ]
     ]
 }
