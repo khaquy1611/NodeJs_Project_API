@@ -1,4 +1,4 @@
-const http = require('http');
+import http from 'http';
 import express from "express";
 import morgan from "morgan";
 import bodyParser from "body-parser";
